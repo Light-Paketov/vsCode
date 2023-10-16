@@ -1,0 +1,49 @@
+{
+    // путь к вашему виртуальному окружению
+    // на Windows «bin» нужно заменить на «Scripts», «python» на «python.exe»
+    // вместо «/» использовать «//», либо «\»
+    "python.pythonPath": "C://Users//Student28//Desktop//123//venv//Scripts//python.exe",
+    "python.testing.pytestArgs": [],
+    "python.testing.unittestEnabled": false,
+    "python.testing.nosetestsEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "python.linting.flake8Enabled": false,
+    //Провайдер форматирования Блек
+    "python.formatting.provider": "black",
+    "python.formatting.blackArgs": [
+        "--line-length=120"
+        ],
+    "python.linting.pylintEnabled": true,
+    //Включаем возможности линтинга:
+    "python.linting.enabled": true,
+    //Включаем линтинг во время сохранения файла (⌘+S):
+    "python.linting.lintOnSave": true,
+    //Интегрируем плагин django-pylint и меням длину строки:
+    "python.linting.pylintArgs": [
+         "--load-plugins",
+         "pylint_django",
+         "--django-settings-module=core.settings",
+         "--max-line-length=120"
+         ],
+    //Включаем isort
+    "editor.codeActionsOnSave": {
+         "source.organizeImports": true
+        },
+    // путь к месту установки flake8, если он не установлен внутри вирт. окружения проекта
+    "cornflakes.linter.executablePath": "<путь к вашему flake8>",
+    "cornflakes.linter.run": "onType",
+    "files.insertFinalNewline": true,
+    "editor.rulers": [
+        80,
+    ],
+    "workbench.editor.enablePreview": false,
+    "editor.minimap.enabled": false,
+    //Форматировать код во время сохранения файла
+    "editor.formatOnSave": true,
+    "[python]": {
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+    }
+    }
+}
+   
